@@ -54,7 +54,7 @@ from app import app
 
 @app.route('/')
 def index():
-    return "<h1>Welcome to Flask Restful API</h1><p>Created By: Alvinditya Saputra</p>"
+    return "<h1>Welcome to Flask Restful API</h1><p>Created By: Ayaz Alam</p>"
 ```
 6. Create `__init__.py` inside app directory according the above structure `flask-rest-api/app/`
 ```python
@@ -70,7 +70,6 @@ python run.py
 ```
 9. Access `localhost:5000` according port that created in `run.py`
 
-![Sample 1](https://raw.githubusercontent.com/piinalpin/flask-rest-api/master/1.PNG)
 
 10. Configure the database with SQLAlchemy, you should create directory `db/` inside `app/` directory and modify `__init__.py` and it will be created `flask-api.db` inside `app` directory
 ```
@@ -192,7 +191,6 @@ def mahasiswa():
         response.status_code = HttpStatus.OK
     return response
 ```
-![Sample 2](https://raw.githubusercontent.com/piinalpin/flask-rest-api/master/2.PNG)
 
 18. How to insert data to database with Http Request POST? Okay, lets do it with create function input data from request, add this code to function mahasiswa as `def mahasiswa()`
 ```python
@@ -213,11 +211,6 @@ def mahasiswa():
             response = jsonify(construct)
             response.status_code = HttpStatus.BAD_REQUEST
 ```
-![Sample 3](https://raw.githubusercontent.com/piinalpin/flask-rest-api/master/3.PNG)
-
-![Sample 4](https://raw.githubusercontent.com/piinalpin/flask-rest-api/master/4.PNG)
-
-![Sample 5](https://raw.githubusercontent.com/piinalpin/flask-rest-api/master/5.PNG)
 
 19. Then create function to filter or get data by id for which will use to PUT and DELETE request, that mean this function can update and delete data from database
 ```python
@@ -268,15 +261,6 @@ def mahasiswaId(id):
             response.status_code = HttpStatus.BAD_REQUEST
     return response
 ```
-![Sample 6](https://raw.githubusercontent.com/piinalpin/flask-rest-api/master/6.PNG)
-
-![Sample 7](https://raw.githubusercontent.com/piinalpin/flask-rest-api/master/7.PNG)
-
-![Sample 8](https://raw.githubusercontent.com/piinalpin/flask-rest-api/master/8.PNG)
-
-![Sample 9](https://raw.githubusercontent.com/piinalpin/flask-rest-api/master/9.PNG)
-
-![Sample 10](https://raw.githubusercontent.com/piinalpin/flask-rest-api/master/10.PNG)
 
 ### After change structure of flask project
 ```
@@ -307,14 +291,5 @@ def mahasiswaId(id):
 * [SQL Alchemy](https://www.sqlalchemy.org/) - The database library
 * [Flask-SQLAlchemy](http://flask-sqlalchemy.pocoo.org/2.3/) - Flask and SQL Alchemy connector
 
-## Clone or Download
 
-You can clone or download this project
-```
-> Clone : git clone https://github.com/piinalpin/flask-rest-api.git
-```
-
-## Authors
-
-* **Alvinditya Saputra** - *Initial work* - [DSS Consulting](https://dssconsulting.id/) - [LinkedIn](https://linkedin.com/in/piinalpin) [Instagram](https://www.instagram.com/piinalpin) [Twitter](https://www.twitter.com/piinalpin)
 
